@@ -58,4 +58,5 @@ document.getElementById("reset").addEventListener('click', ()=>{
    searchSection.style.display = "block";
    search.textContent = "Find";
    avatar.src = "";
+    input.value = "";
 })
