@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./build.css" />
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon" />
+    <title>Git Find</title>
+
+</head>
+
+<body class="flex items-center bg-zinc-900 w-full h-screen justify-center bg-cover bg-no-repeat bg-top-left">
+    <div class="wrapper bg-zinc-800 rounded-3xl max-w-120 h-auto ">
+        <div class="search block w-full h-full p-10 select-none" id="searchSection">
+            <form action="#" class="flex flex-col items-center">
+                <h2 class="text-white font-serif font-extrabold text-3xl text-centern header">
+                    Welcome
+                </h2>
+                <div class="input relative mt-5">
+                    <input type="text" name="" id="username"
+                        class="p-2 text-white border-b w-full focus:outline-none inline-block" placeholder="username" />
+                </div>
+                <p class="errorText text-red-500 h-2 text-[13px] tracking-wider mt-1"></p>
+                <div class="flex align-center justify-center">
+                    <button id="search"
+                        class="text-white bg-violet-600 text-xl self-center mt-10 font-serif px-6 py-2 rounded-4xl cursor-pointer active:scale-101 inline-block">
+                        Find
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="card hidden pb-5 p-10 text-white">
+            <div class="first-row flex gap-10 w-full">
+                <img src="" alt="avatar_image" id="avatar" class="w-30 h-30 rounded-[50%] " />
+                <div class="right-part w-full">
+                    <p class="text-xl">
+                        <a class="cursor-pointer tracking-wider font-serif" id="name" href="#" target="_blank"></a>
+                    </p>
+                    <p class="text-gray-400 tracking-wider font-semibold" id="userId"></p>
+                    <p class="text-gray-300 mt-1 font-semibold">
+                        <span id="followersCount"> </span><span class="text-green-300 text-[13px]"> followers</span>
+                        <span id="followingCount" class="ml-5"> </span>
+                        <span class="text-rose-400 text-[13px]"> following</span>
+                    </p>
+                    <p class="font-semibold text-yellow-400">
+                        Location <span id="location" class="text-gray-300"></span>
+                    </p>
+                    <p class="text-yellow-400 font-semibold tracking-wider">
+                        Repositories <span id="reposCount" class="text-gray-300"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="second-row  pt-5">
+                <p class="bio indent-10 text-gray-300" id="bio"></p>
+                <div class="links mt-2">
+                    <a href="" class="text-cyan-400 font-mono tracking-wider underline" id="links" target="_blank">Visit
+                        Blog</a>
+                </div>
+            </div>
+        <div  class=" flex justify-center w-full  ">
+            <button id="reset" class=" p-2 px-5 rounded-3xl cursor-pointer text-violet-200 font-semibold bg-emerald-700 mt-4">Research </button>
+
+        </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
